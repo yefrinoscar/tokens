@@ -1,0 +1,30 @@
+{
+  "color": {
+    "brand": {
+      "primary": { "value": "#0078D4" },
+      "secondary": { "value": "#2B88D8" },
+      "tertiary": { "value": "#71AFE5" }
+    },
+    "neutral": {
+      "black": { "value": "#000000" },
+      "white": { "value": "#FFFFFF" },
+      "gray": {
+        "100": { "value": "#F3F3F3" },
+        "200": { "value": "#E6E6E6" },
+        "300": { "value": "#CCCCCC" },
+        "400": { "value": "#B3B3B3" },
+        "500": { "value": "#999999" },
+        "600": { "value": "#808080" },
+        "700": { "value": "#666666" },
+        "800": { "value": "#4D4D4D" },
+        "900": { "value": "#333333" }
+      }
+    },
+    "feedback": {
+      "success": { "value": "#107C10" },
+      "warning": { "value": "#FFB900" },
+      "error": { "value": "#D83B01" },
+      "info": { "value": "#0078D4" }
+    }
+  }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@claro/tokens Example</title>
+  <link rel="stylesheet" href="../dist/css/tokens.css">
+  <style>
+    body {
+      font-family: var(--font-family-base);
+      color: var(--color-neutral-gray-900);
+      background-color: var(--color-neutral-white);
+      line-height: var(--font-lineHeight-normal);
+      padding: var(--spacing-8);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      font-size: var(--font-size-4xl);
+      font-weight: var(--font-weight-bold);
+      margin-bottom: var(--spacing-6);
+      color: var(--color-brand-primary);
+    }
+    
+    h2 {
+      font-size: var(--font-size-2xl);
+      font-weight: var(--font-weight-semibold);
+      margin-top: var(--spacing-8);
+      margin-bottom: var(--spacing-4);
+      color: var(--color-brand-secondary);
+    }
+    
+    .color-palette {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: var(--spacing-4);
+      margin-bottom: var(--spacing-8);
+    }
+    
+    .color-swatch {
+      height: 80px;
+      border-radius: 8px;
+      display: flex;
+      align-items: flex-end;
+      padding: var(--spacing-2);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .color-label {
+      font-size: var(--font-size-xs);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: var(--spacing-1) var(--spacing-2);
+      border-radius: 4px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .spacing-example {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-4);
+      margin-bottom: var(--spacing-8);
+    }
+    
+    .spacing-item {
+      background-color: var(--color-brand-tertiary);
+      height: 20px;
+    }
+    
+    .typography-example {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-4);
+      margin-bottom: var(--spacing-8);
+    }
+  </style>
+</head>
+<body>
+  <h1>@claro/tokens Example</h1>
+  <p>This example demonstrates the usage of CSS variables generated from design tokens.</p>
+  
+  <h2>Color Palette</h2>
+  <div class="color-palette">
+    <div class="color-swatch" style="background-color: var(--color-brand-primary)">
+      <div class="color-label">Primary</div>
+    </div>
+    <div class="color-swatch" style="background-color: var(--color-brand-secondary)">
+      <div class="color-label">Secondary</div>
+    </div>
+    <div class="color-swatch" style="background-color: var(--color-brand-tertiary)">
+      <div class="color-label">Tertiary</div>
+    </div>
+    <div class="color-swatch" style="background-color: var(--color-feedback-success)">
+      <div class="color-label">Success</div>
+    </div>
+    <div class="color-swatch" style="background-color: var(--color-feedback-warning)">
+      <div class="color-label">Warning</div>
+    </div>
+    <div class="color-swatch" style="background-color: var(--color-feedback-error)">
+      <div class="color-label">Error</div>
+    </div>
+    <div class="color-swatch" style="background-color: var(--color-feedback-info)">
+      <div class="color-label">Info</div>
+    </div>
+  </div>
+  
+  <h2>Gray Scale</h2>
+  <div class="color-palette">
+    <div class="color-swatch" style="background-color: var(--color-neutral-gray-100)">
+      <div class="color-label">Gray 100</div>
+    </div>
+    <div class="color-swatch" style="background-color: var(--color-neutral-gray-200)">
+      <div class="color-label">Gray 200</div>
+    </div>
+    <div class="color-swatch" style="background-color: var(--color-neutral-gray-300)">
+      <div class="color-label">Gray 300</div>
+    </div>
+    <div class="color-swatch" style="background-color: var(--color-neutral-gray-400)">
+      <div class="color-label">Gray 400</div>
+    </div>
+    <div class="color-swatch" style="background-color: var(--color-neutral-gray-500)">
+      <div class="color-label">Gray 500</div>
+    </div>
+    <div class="color-swatch" style="background-color: var(--color-neutral-gray-600)">
+      <div class="color-label">Gray 600</div>
+    </div>
+    <div class="color-swatch" style="background-color: var(--color-neutral-gray-700)">
+      <div class="color-label">Gray 700</div>
+    </div>
+    <div class="color-swatch" style="background-color: var(--color-neutral-gray-800)">
+      <div class="color-label">Gray 800</div>
+    </div>
+    <div class="color-swatch" style="background-color: var(--color-neutral-gray-900)">
+      <div class="color-label">Gray 900</div>
+    </div>
+  </div>
+  
+  <h2>Typography</h2>
+  <div class="typography-example">
+    <div style="font-size: var(--font-size-5xl); font-weight: var(--font-weight-bold);">5XL Bold</div>
+    <div style="font-size: var(--font-size-4xl); font-weight: var(--font-weight-bold);">4XL Bold</div>
+    <div style="font-size: var(--font-size-3xl); font-weight: var(--font-weight-semibold);">3XL Semibold</div>
+    <div style="font-size: var(--font-size-2xl); font-weight: var(--font-weight-semibold);">2XL Semibold</div>
+    <div style="font-size: var(--font-size-xl); font-weight: var(--font-weight-medium);">XL Medium</div>
+    <div style="font-size: var(--font-size-lg); font-weight: var(--font-weight-medium);">LG Medium</div>
+    <div style="font-size: var(--font-size-md); font-weight: var(--font-weight-regular);">MD Regular</div>
+    <div style="font-size: var(--font-size-sm); font-weight: var(--font-weight-regular);">SM Regular</div>
+    <div style="font-size: var(--font-size-xs); font-weight: var(--font-weight-light);">XS Light</div>
+  </div>
+  
+  <h2>Spacing</h2>
+  <div class="spacing-example">
+    <div class="spacing-item" style="width: var(--spacing-1);"></div>
+    <div class="spacing-item" style="width: var(--spacing-2);"></div>
+    <div class="spacing-item" style="width: var(--spacing-3);"></div>
+    <div class="spacing-item" style="width: var(--spacing-4);"></div>
+    <div class="spacing-item" style="width: var(--spacing-6);"></div>
+    <div class="spacing-item" style="width: var(--spacing-8);"></div>
+    <div class="spacing-item" style="width: var(--spacing-12);"></div>
+    <div class="spacing-item" style="width: var(--spacing-16);"></div>
+    <div class="spacing-item" style="width: var(--spacing-24);"></div>
+  </div>
+</body>
+</html>

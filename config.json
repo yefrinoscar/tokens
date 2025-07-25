@@ -1,0 +1,31 @@
+{
+  "source": ["src/tokens/design-tokens.tokens.json"],
+  "platforms": {
+    "css": {
+      "transformGroup": "custom/css",
+      "prefix": "claro",
+      "buildPath": "dist/css/",
+      "files": [{
+        "destination": "tokens.css",
+        "format": "css/variables"
+      }]
+    },
+    "scss": {
+      "transformGroup": "custom/scss",
+      "prefix": "claro",
+      "buildPath": "dist/scss/",
+      "files": [{
+        "destination": "_tokens.scss",
+        "format": "scss/variables"
+      }]
+    },
+    "js": {
+      "transformGroup": "custom/js",
+      "buildPath": "dist/js/",
+      "files": [{
+        "destination": "tokens.js",
+        "format": "javascript/es6"
+      }]
+    }
+  }
+}

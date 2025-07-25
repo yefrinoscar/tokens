@@ -1,0 +1,38 @@
+{
+  "name": "tokens",
+  "version": "0.1.0",
+  "description": "Design tokens for Claro design system",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "style": "dist/css/tokens.css",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/REPO.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run build:tokens && npm run build:ts",
+    "build:tokens": "node build.js",
+    "build:ts": "tsc",
+    "clean": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "design-tokens",
+    "css",
+    "style-dictionary",
+    "claro"
+  ],
+  "dependencies": {
+    "style-dictionary": "^3.8.0"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  }
+}

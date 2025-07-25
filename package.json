@@ -1,5 +1,5 @@
 {
-  "name": "tokens",
+  "name": "@yefrinoscar/tokens",
   "version": "0.1.0",
   "description": "Design tokens for Claro design system",
   "main": "dist/index.js",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OWNER/REPO.git"
+    "url": "git+https://github.com/yefrinoscar/tokens.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -29,9 +29,12 @@
     "claro"
   ],
   "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
     "style-dictionary": "^3.8.0"
   },
   "devDependencies": {
+    "@types/node": "^24.1.0",
     "rimraf": "^5.0.1",
     "typescript": "^5.1.6"
   }
